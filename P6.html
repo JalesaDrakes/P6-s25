@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homework 5 Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="script.js" defer></script> 
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    h1, h2, h3 {
+      margin-top: 20px;
+    }
+    .section-title {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body onload="init()">
+
+  <div class="jumbotron text-white bg-primary text-center">
+    <h1 class="display-4">Welcome to My Bootstrap + JavaScript Page</h1>
+    <p class="lead">Bootstrap Layout, JavaScript, DOM</p>
+  </div>
+
+  <div class="container bg-light py-4">
+    <h2 class="section-title text-dark">About This Page</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <p>This webpage now includes JavaScript DOM manipulation, event listeners, and form handling along with Bootstrap styling!</p>
+      </div>
+      <div class="col-md-4">
+        <div class="alert alert-info">
+          <strong>Note:</strong> Now interactive with JavaScript!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-secondary text-white py-4">
+    <h2 class="section-title text-center">Technologies Used</h2>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="p-3 bg-dark rounded">HTML5</div>
+      </div>
+      <div class="col-sm-4">
+        <div class="p-3 bg-dark rounded">Bootstrap 4</div>
+      </div>
+      <div class="col-sm-4">
+        <div class="p-3 bg-dark rounded">JavaScript</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-white py-4">
+    <h2 class="section-title text-success">Features</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">Responsive grid layout</li>
+          <li class="list-group-item">Event-driven JavaScript</li>
+          <li class="list-group-item">DOM Manipulation</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <button id="btn1" class="btn btn-outline-primary btn-lg m-2">Toggle Dark Mode</button>
+        <button id="btn2" class="btn btn-outline-secondary btn-lg m-2">Hide/Show Features</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-light py-4">
+    <h2 class="section-title text-info">Contact Form</h2>
+    <form id="contactForm" class="p-3">
+      <div class="form-group">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Enter password">
+      </div>
+      <div class="form-group">
+        <label for="selection">Select an option:</label>
+        <select id="selection" name="selection" class="form-control">
+          <option value="Option 1">Option 1</option>
+          <option value="Option 2">Option 2</option>
+          <option value="Option 3">Option 3</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success">Submit Form</button>
+    </form>
+
+    <div id="output" class="mt-3 text-primary"></div>
+  </div>
+
+  <div class="container-fluid bg-warning text-dark text-center py-4">
+    <h2 class="section-title">Call to Action</h2>
+    <p class="lead">Start using Bootstrap and JavaScript together!</p>
+    <button id="ctaButton" class="btn btn-danger btn-lg">Get Started</button>
+  </div>
+
+  <div class="container text-center text-muted py-3">
+    <small>&copy; 2025 Your Name - Homework 5 | Designed with Bootstrap and JavaScript</small>
+  </div>
+
+</body>
+</html>
